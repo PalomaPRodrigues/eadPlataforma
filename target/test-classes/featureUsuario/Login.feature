@@ -22,8 +22,8 @@ Esquema do Cenario: Login com sucesso
 	Entao valido mensagem final com sucesso "<msgFinal>"
 
 	Exemplos:
-	|email                   |senha    |msgFinal|
-	|paloma.gpedro@gmail.com |Do0z322@ç|Home    |
+	|email                    |senha    |msgFinal|
+	|paloma.gpedro@hotmail.com|pwd2212  |Home    |
 	
 	Esquema do Cenario: Login com insucesso
 	E preencho e-mail "<email>"
@@ -32,5 +32,5 @@ Esquema do Cenario: Login com sucesso
 	Entao valido mensagem final com sucesso "<msgFinal>"
 
 	Exemplos:
-	|email                   |senha |msgFinal                   |
-	|paloma.gpedro@gmail.com |pwd123|Dados de acesso incorretos!|
+	|email                     |senha    |msgFinal                   |
+	|paloma.gpedro@hotmail.com |pwd2213 |Dados de acesso incorretos!|
