@@ -4,9 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import drive.DriverFactory;
-
-public class CadastroLogic extends DriverFactory{
+public class CadastroLogic extends driver.DriverFactory{
 	
 	private CadastroPage cadastroPage;
 	
@@ -35,7 +33,7 @@ public class CadastroLogic extends DriverFactory{
 	
 	public void preencherSenha(String senha) {
 		cadastroPage.getSenha().findElement(driver).sendKeys(senha);
-		tempoDeEspera(1000);
+		tempoDeEspera(500);
 	}
 	
 	public void preencherCaptcha(String captcha) {
@@ -47,5 +45,6 @@ public class CadastroLogic extends DriverFactory{
 		WebElement btnCriarConta = driver.findElement(By.xpath(cadastroPage.getCriarConta()));
 		Actions actions = new Actions(driver);
 		actions.click(btnCriarConta).build().perform();
+		tempoDeEspera(500);
 	}
 }

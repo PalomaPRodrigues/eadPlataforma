@@ -11,17 +11,52 @@ Funcionalidade: redirecionamento dos links do Header
   
 Contexto:
 	Dado que estou na pagina home do site
-	
-Esquema do Cenário: redirecionamento dos links do Header
-  E clico Login
+	E clico Login
+ 
+Esquema do Cenário: redirecionamento do link Curso
   E preencho e-mail "<email>"
   E preencho senha "<senha>"
   E seleciono entrar
-  Quando clico no "<menu>"
+  E clico no Curso
   Entao valido mensagem final com sucesso "<msgFinal>"
+  
+  Exemplos:
+ |email                    |senha    |msgFinal|
+ |paloma.gpedro@hotmail.com|pwd2212  |Home    |
  
 
+ Esquema do Cenário: redirecionamento do link Forum
+  E preencho e-mail "<email>"
+  E preencho senha "<senha>"
+  E seleciono entrar
+  E clico no Forum
+  Entao valido mensagem final com sucesso "<msgFinal>"
+  
   Exemplos:
- |email                  |senha    |menu  |msgFinal|
- |paloma.gpedro@gmail.com|Do0z322@ç|Cursos|Home    |
+ |email                    |senha    |msgFinal|
+ |paloma.gpedro@hotmail.com|pwd2212	 | Home   |
+ 
+ Esquema do Cenário: redirecionamento do link Carrinho
+ 	E preencho e-mail "<email>"
+  E preencho senha "<senha>"
+  E seleciono entrar
+  E clico no Carrinho
+  Entao valido mensagem final com sucesso "<msgFinal>"
+  
+  Exemplos:
+ |email                    |senha    |msgFinal|
+ |paloma.gpedro@hotmail.com|pwd2212	 |CARRINHO|
+ 
+
+ Esquema do Cenário: redirecionamento do link Notificacao
+  E preencho e-mail "<email>"
+  E preencho senha "<senha>"
+  E seleciono entrar
+  E clico no notificacao
+  Entao valido mensagem final com sucesso "<msgFinal>"
+  
+  Exemplos:
+ |email                    |senha    |msgFinal |
+ |paloma.gpedro@hotmail.com|pwd2212	 |Home     |
+ 
  

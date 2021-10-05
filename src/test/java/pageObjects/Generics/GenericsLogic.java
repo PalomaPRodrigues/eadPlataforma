@@ -5,9 +5,7 @@ import static org.junit.Assert.assertTrue;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import drive.DriverFactory;
-
-public class GenericsLogic extends DriverFactory {
+public class GenericsLogic extends driver.DriverFactory {
 
 	private GenericsPage genericsPage;
 

@@ -1,8 +1,6 @@
 package pageObjects.Header;
 
-import drive.DriverFactory;
-
-public class HeaderLogic extends DriverFactory {
+public class HeaderLogic extends driver.DriverFactory {
 
 	private HeaderPage headerpage;
 
@@ -10,12 +8,21 @@ public class HeaderLogic extends DriverFactory {
 		headerpage = new HeaderPage();
 	}
 
-	public void clicarMenu(String menu){
-		tempoDeEspera(1000);
+	public void clicarCurso() {
 		headerpage.getBtnCurso().findElement(driver).click();
-//		headerpage.getBtnForum().findElement(driver).click();
-//		headerpage.getBtnCarrinho().findElement(driver).click();
-//		headerpage.getBtnNotificacao().findElement(driver).click();
+
 	}
-	
+
+	public void ClicarForum() {
+		headerpage.getBtnForum().findElement(driver).click();
+	}
+
+	public void ClicarCarrinho() {
+		headerpage.getBtnCarrinho().findElement(driver).click();
+	}
+
+	public void ClicarNotificacao() {
+		headerpage.getBtnNotificacao().findElement(driver).click();
+	}
+
 }

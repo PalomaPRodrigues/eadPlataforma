@@ -1,6 +1,6 @@
 package pageObjects.Header;
 
-import cucumber.api.java.pt.Quando;
+import cucumber.api.java.pt.Dado;
 
 public class HeaderStep {
 
@@ -10,10 +10,27 @@ public class HeaderStep {
 		headerLogic = new HeaderLogic();
 	}
 
+	@Dado("^clico no Curso$")
+	public void clicoNoCurso() {
+		headerLogic.clicarCurso();
 
-	@Quando("^clico no \"([^\"]*)\"$")
-	public void clicoNo(String menu) {
-		headerLogic.clicarMenu(menu);
+	}
+
+	@Dado("^clico no Forum$")
+	public void clicoNoForum() {
+		headerLogic.ClicarForum();
+
+	}
+
+	@Dado("^clico no Carrinho$")
+	public void clicoNoCarrinho() {
+		headerLogic.ClicarCarrinho();
+
+	}
+
+	@Dado("^clico no notificacao$")
+	public void clicoNoNotificacao() {
+		headerLogic.ClicarNotificacao();
 
 	}
 

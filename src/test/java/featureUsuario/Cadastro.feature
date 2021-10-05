@@ -9,7 +9,7 @@ Funcionalidade: Cadastro com sucesso
   Quero me cadastrar
   Para acessar os cursos
 
-Esquema do Cenário: Cadastro insucesso
+Esquema do Cenário: Valida Captcha
   Dado que estou na pagina home do site
   E clico cadastro
   E preencho nome "<nome>"

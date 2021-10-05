@@ -1,8 +1,6 @@
 package pageObjects.Login;
 
-import drive.DriverFactory;
-
-public class LoginLogic extends DriverFactory {
+public class LoginLogic extends driver.DriverFactory {
 	
 	private LoginPage loginPage;
 	
