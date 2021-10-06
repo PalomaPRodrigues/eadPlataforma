@@ -1,12 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com.eadplataforma</groupId>
-  <artifactId>ead_plataforma</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-    <name>ead_plataforma</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.brilhoso</groupId>
+	<artifactId>automation-brilhoso</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>automation-brilhoso</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -14,12 +14,12 @@
 	</properties>
 
 	<dependencies>
-	
-	<dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>3.0.3</version>
-        </dependency>
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.0.3</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.relevantcodes</groupId>
@@ -32,7 +32,7 @@
 			<artifactId>cucumber-extentsreport</artifactId>
 			<version>2.0.2</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -83,5 +83,5 @@
 			<version>3.9</version>
 		</dependency>
 	</dependencies>
-  
+
 </project>

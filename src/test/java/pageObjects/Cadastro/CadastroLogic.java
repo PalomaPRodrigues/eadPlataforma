@@ -4,9 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import drive.DriverFactory;
-
-public class CadastroLogic extends DriverFactory{
+public class CadastroLogic extends driver.DriverFactory{
 	
 	private CadastroPage cadastroPage;
 	
