@@ -25,4 +25,8 @@ public class HeaderLogic extends driver.DriverFactory {
 		headerpage.getBtnNotificacao().findElement(driver).click();
 	}
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master

@@ -9,7 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+<<<<<<< HEAD
 import org.openqa.selenium.ie.InternetExplorerDriver;
+=======
+>>>>>>> master
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DriverFactory {
@@ -18,16 +21,23 @@ public class DriverFactory {
 	protected static WebDriverWait wait;
 
 	public static WebDriver createWebDriver() {
+<<<<<<< HEAD
 		String webdriver = System.getProperty("browser", "opera");
+=======
+		String webdriver = System.getProperty("browser", "firefox");
+>>>>>>> master
 		switch (webdriver) {
 		case "chrome":
 			return initChromeDriver();
 		case "firefox":
 			return initFirefoxDriver();
+<<<<<<< HEAD
 		case "internetExplore":
 			return initExploreDriver();
 		case "opera":
 			return initOpera();
+=======
+>>>>>>> master
 		case "edge":
 			return initEdge();
 		}
@@ -61,6 +71,7 @@ public class DriverFactory {
 		return driver;
 	}
 
+<<<<<<< HEAD
 	private static WebDriver initExploreDriver() {
 		if (driver == null) {
 			String pathDriverExplore = System.getProperty("user.dir")
@@ -85,6 +96,8 @@ public class DriverFactory {
 		return driver;
 	}
 
+=======
+>>>>>>> master
 	private static WebDriver initEdge() {
 		if (driver == null) {
 			String pathDriverEdge = System.getProperty("user.dir") + "\\src\\main\\java\\webdrivers\\edgedriver.exe";
