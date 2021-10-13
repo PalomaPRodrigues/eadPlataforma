@@ -1,12 +1,12 @@
 #language: pt
 #encoding: UTF-8
 #Author: Paloma Pedro Rodrigues
-#date:03/10/2021
+#date:11/10/2021
 #version: 1.0
 
-Funcionalidade: redirecionamento dos links do Header
+Funcionalidade: redirecionamento dos links Meu Perfil
   Como um aluno do site eadplataforma
-  Quero clicar nos links do hearder
+  Quero clicar nos links do meu perfol
   Para que seja redirecionado para página correta
   
 Contexto:
@@ -15,15 +15,15 @@ Contexto:
 	E preencho e-mail "paloma.gpedro@hotmail.com"
   E preencho senha "pwd2212"
   E seleciono entrar
-  E clico eem aceitar coockies
+  E clico no meu Perfil
  
 Esquema do Cenário: redirecionamento do link da logo
-  E clico na Logo
+  E seleciono no meus cursos
   Entao valido mensagem final com sucesso "<msgFinal>"
   
   Exemplos:
-  |msgFinal                           |
-  |Quer receber informações de cursos?|
+  |msgFinal|
+  |Contatos|
  
 Esquema do Cenário: redirecionamento do link Curso
   E clico no Curso

@@ -9,10 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-<<<<<<< HEAD
-import org.openqa.selenium.ie.InternetExplorerDriver;
-=======
->>>>>>> master
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DriverFactory {
@@ -21,23 +17,12 @@ public class DriverFactory {
 	protected static WebDriverWait wait;
 
 	public static WebDriver createWebDriver() {
-<<<<<<< HEAD
-		String webdriver = System.getProperty("browser", "opera");
-=======
-		String webdriver = System.getProperty("browser", "firefox");
->>>>>>> master
+		String webdriver = System.getProperty("browser", "chrome");
 		switch (webdriver) {
 		case "chrome":
 			return initChromeDriver();
 		case "firefox":
 			return initFirefoxDriver();
-<<<<<<< HEAD
-		case "internetExplore":
-			return initExploreDriver();
-		case "opera":
-			return initOpera();
-=======
->>>>>>> master
 		case "edge":
 			return initEdge();
 		}
@@ -51,7 +36,7 @@ public class DriverFactory {
 					+ "\\src\\main\\java\\webdrivers\\chromedriver.exe";
 			System.setProperty("webdriver.chrome.driver", pathDriverChorme);
 			driver = new ChromeDriver();
-			wait = new WebDriverWait(DriverFactory.initChromeDriver(), 12);
+			wait = new WebDriverWait(DriverFactory.initChromeDriver(), 22);
 			driver.manage().window().maximize();
 		}
 
@@ -71,33 +56,6 @@ public class DriverFactory {
 		return driver;
 	}
 
-<<<<<<< HEAD
-	private static WebDriver initExploreDriver() {
-		if (driver == null) {
-			String pathDriverExplore = System.getProperty("user.dir")
-					+ "\\src\\main\\java\\webdrivers\\IEDriverServer.exe";
-			System.setProperty("webdriver.IEDriverServer.driver", pathDriverExplore);
-			driver = new InternetExplorerDriver();
-			wait = new WebDriverWait(DriverFactory.initExploreDriver(), 12);
-			driver.manage().window().maximize();
-		}
-
-		return driver;
-	}
-
-	private static WebDriver initOpera() {
-		if (driver == null) {
-			String pathDriverOpera = System.getProperty("user.dir") + "\\src\\main\\java\\webdrivers\\operadriver.exe";
-			System.setProperty("webdriver.opera.driver", pathDriverOpera);
-			driver = new InternetExplorerDriver();
-			wait = new WebDriverWait(DriverFactory.initExploreDriver(), 12);
-			driver.manage().window().maximize();
-		}
-		return driver;
-	}
-
-=======
->>>>>>> master
 	private static WebDriver initEdge() {
 		if (driver == null) {
 			String pathDriverEdge = System.getProperty("user.dir") + "\\src\\main\\java\\webdrivers\\edgedriver.exe";

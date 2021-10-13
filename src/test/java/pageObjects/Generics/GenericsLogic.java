@@ -15,7 +15,7 @@ public class GenericsLogic extends driver.DriverFactory {
 	}
 
 	public void navega() {
-		navega("https://iasmin.eadplataforma.com/");
+		navega("https://palomarodrigues.eadplataforma.com/");
 	}
 
 	public void validoMsg(String msgFinal) {

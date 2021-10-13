@@ -7,6 +7,11 @@ public class HeaderLogic extends driver.DriverFactory {
 	public HeaderLogic() {
 		headerpage = new HeaderPage();
 	}
+	
+	public void clicarLogo() {
+		headerpage.getBtnLogo().findElement(driver).click();
+		
+	}
 
 	public void clicarCurso() {
 		headerpage.getBtnCurso().findElement(driver).click();
@@ -24,9 +29,4 @@ public class HeaderLogic extends driver.DriverFactory {
 	public void ClicarNotificacao() {
 		headerpage.getBtnNotificacao().findElement(driver).click();
 	}
-
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> master

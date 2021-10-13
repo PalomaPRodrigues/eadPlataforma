@@ -10,6 +10,12 @@ public class HeaderStep {
 		headerLogic = new HeaderLogic();
 	}
 
+	@Dado("^clico na Logo$")
+	public void clicoNaLogo()  {
+		headerLogic.clicarLogo();
+	  
+	}
+	
 	@Dado("^clico no Curso$")
 	public void clicoNoCurso() {
 		headerLogic.clicarCurso();

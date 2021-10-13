@@ -12,93 +12,51 @@ Funcionalidade: redirecionamento dos links do Header
 Contexto:
 	Dado que estou na pagina home do site
 	E clico Login
+	E preencho e-mail "paloma.gpedro@hotmail.com"
+  E preencho senha "pwd2212"
+  E seleciono entrar
+  E clico eem aceitar coockies
+ 
+Esquema do Cenário: redirecionamento do link da logo
+  E clico na Logo
+  Entao valido mensagem final com sucesso "<msgFinal>"
+  
+  Exemplos:
+  |msgFinal                           |
+  |Quer receber informações de cursos?|
  
 Esquema do Cenário: redirecionamento do link Curso
-  E preencho e-mail "<email>"
-  E preencho senha "<senha>"
-  E seleciono entrar
   E clico no Curso
-<<<<<<< HEAD
-=======
   Entao valido mensagem final com sucesso "<msgFinal>"
   
   Exemplos:
- |email                    |senha    |msgFinal|
- |paloma.gpedro@hotmail.com|pwd2212  |Home    |
+  |msgFinal|
+  |Home    |
  
 
  Esquema do Cenário: redirecionamento do link Forum
-  E preencho e-mail "<email>"
-  E preencho senha "<senha>"
-  E seleciono entrar
   E clico no Forum
   Entao valido mensagem final com sucesso "<msgFinal>"
   
   Exemplos:
- |email                    |senha    |msgFinal|
- |paloma.gpedro@hotmail.com|pwd2212	 | Home   |
+  |msgFinal|
+  | Home   |
  
  Esquema do Cenário: redirecionamento do link Carrinho
- 	E preencho e-mail "<email>"
-  E preencho senha "<senha>"
-  E seleciono entrar
-  E clico no Carrinho
->>>>>>> master
-  Entao valido mensagem final com sucesso "<msgFinal>"
-  
-  Exemplos:
- |email                    |senha    |msgFinal|
-<<<<<<< HEAD
- |paloma.gpedro@hotmail.com|pwd2212  |Home    |
- 
-
- Esquema do Cenário: redirecionamento do link Forum
-  E preencho e-mail "<email>"
-  E preencho senha "<senha>"
-  E seleciono entrar
-  E clico no Forum
-  Entao valido mensagem final com sucesso "<msgFinal>"
-  
-  Exemplos:
- |email                    |senha    |msgFinal|
- |paloma.gpedro@hotmail.com|pwd2212	 | Home   |
- 
- Esquema do Cenário: redirecionamento do link Carrinho
- 	E preencho e-mail "<email>"
-  E preencho senha "<senha>"
-  E seleciono entrar
   E clico no Carrinho
   Entao valido mensagem final com sucesso "<msgFinal>"
   
   Exemplos:
- |email                    |senha    |msgFinal|
- |paloma.gpedro@hotmail.com|pwd2212	 |CARRINHO|
+ |msgFinal|
+ |Home    |
  
-
  Esquema do Cenário: redirecionamento do link Notificacao
-  E preencho e-mail "<email>"
-  E preencho senha "<senha>"
-  E seleciono entrar
   E clico no notificacao
   Entao valido mensagem final com sucesso "<msgFinal>"
   
   Exemplos:
- |email                    |senha    |msgFinal |
- |paloma.gpedro@hotmail.com|pwd2212	 |Home     |
- 
-=======
- |paloma.gpedro@hotmail.com|pwd2212	 |CARRINHO|
- 
+  |msgFinal |
+  |Home     |
 
- Esquema do Cenário: redirecionamento do link Notificacao
-  E preencho e-mail "<email>"
-  E preencho senha "<senha>"
-  E seleciono entrar
-  E clico no notificacao
-  Entao valido mensagem final com sucesso "<msgFinal>"
-  
-  Exemplos:
- |email                    |senha    |msgFinal |
- |paloma.gpedro@hotmail.com|pwd2212	 |Home     |
->>>>>>> master
+
  
